@@ -1,0 +1,70 @@
+{
+ "reference": "joints_trajectory_shoulder_rel_3",
+ "policy": "2026-11-15_02-25-16_v3_model_1499",
+ "checkpoint": "C:\\Users\\linhp\\Documents\\hack\\hack_RL\\logs\\rsl_rl\\panther_frisbee_throw\\2026-11-15_02-25-16_v3\\model_1499.pt",
+ "rate_hz": 47.52108601514996,
+ "time_stretch": 1.0521645061743696,
+ "note": "release_* values are from the simulation at stretch 1; velocities scale ~1/time_stretch",
+ "gripper_open_index": 76,
+ "gripper_open_joints": [
+  0.69411,
+  -0.72774,
+  -0.18664,
+  0.55388,
+  -1.40921,
+  -1.92343,
+  -0.32636,
+  -0.36258
+ ],
+ "peak_joint_speed_rad_s": 2.8512652742081275,
+ "spline_peak_speed_rad_s": [
+  2.469,
+  2.656,
+  2.369,
+  2.428,
+  2.088,
+  2.876,
+  2.706,
+  2.97
+ ],
+ "passes_cartesian_follow_speed_check": true,
+ "velocity_limit_rad_s": [
+  3.0,
+  3.0,
+  3.0,
+  3.0,
+  3.0,
+  3.0,
+  3.0,
+  3.0
+ ],
+ "gripper_open_command_t": 1.5199999809265137,
+ "frisbee_leaves_t": 1.5799999237060547,
+ "velocity_mps": [
+  4.039000034332275,
+  -0.8659999966621399,
+  0.1509999930858612
+ ],
+ "angular_velocity_radps": [
+  0.20600000023841858,
+  -0.008999999612569809,
+  -8.378000259399414
+ ],
+ "disc_normal": [
+  -0.05999999865889549,
+  0.04899999871850014,
+  0.996999979019165
+ ],
+ "quality": 0.862091064453125,
+ "components": {
+  "speed": 1.0,
+  "direction": 0.857293963432312,
+  "elevation": 0.9792916178703308,
+  "flat": 0.9882102608680725,
+  "aoa": 0.9917559623718262,
+  "spin": 0.5577069520950317,
+  "no_wobble": 0.9861463904380798,
+  "v_forward_mps": 4.039308071136475,
+  "spin_radps": 8.36560344696045
+ }
+}

@@ -1,0 +1,86 @@
+<mujoco model="panther_right_arm">
+  <compiler angle="radian" autolimits="true" />
+  <default>
+    <geom contype="1" conaffinity="1" condim="3" friction="0.8 0.02 0.001" rgba="0.75 0.77 0.8 1" />
+  </default>
+  <worldbody>
+    <body name="torso" pos="0 0 0">
+      <inertial pos="-0.0101255 7.38412e-05 -0.00580945" mass="1.14697" fullinertia="0.0156626 0.0115731 0.00763938 -1.89948e-06 0.000252658 -3.86151e-06" />
+      <geom name="torso_box" type="box" size="0.10 0.12 0.28" pos="-0.02 0 -0.26" rgba="0.35 0.38 0.45 1" />
+      <geom name="head" type="sphere" size="0.10" pos="0 0 0.25" rgba="0.35 0.38 0.45 1" />
+      <geom name="left_arm_parked" type="capsule" fromto="0 0.24 0 0 0.27 -0.55" size="0.04" rgba="0.55 0.57 0.6 1" />
+      <site name="torso_site" pos="0 0 0" />
+      <body name="link_ra0" pos="0 -0.0595 0" quat="1 0 0 0">
+        <inertial pos="4.39083e-06 -0.0351511 0.00290057" mass="0.0272189" fullinertia="6.92293e-05 4.08436e-05 6.84833e-05 8.74057e-09 1.88168e-10 -2.75432e-06" />
+        <joint name="joint_ra0" type="hinge" axis="0 0 1" range="-0.697 1.046" damping="0.374" armature="0.499" frictionloss="0.3558" actuatorfrcrange="-31.0 31.0" />
+        <geom name="link_ra0_col" type="capsule" fromto="0 0 0 0 -0.122 0" size="0.045" />
+        <body name="link_ra1" pos="0 -0.122 0" quat="1 0 0 0">
+          <inertial pos="0.0130368 -0.0585029 0.000536492" mass="1.27372" fullinertia="0.00218156 0.0015556 0.00205984 0.000417342 3.20441e-05 -4.68914e-06" />
+          <joint name="joint_ra1" type="hinge" axis="0 1 0" range="-3.14 0.785" damping="0.3655" armature="0.05" frictionloss="0.4914" actuatorfrcrange="-31.0 31.0" />
+          <geom name="link_ra1_col" type="capsule" fromto="0 0 0 0 -0.0905 0" size="0.045" />
+          <body name="link_ra2" pos="0 -0.0905 0" quat="1 0 0 0">
+            <inertial pos="-0.0212851 0.00339129 -0.0908433" mass="0.0158449" fullinertia="3.26415e-05 1.96571e-05 2.06251e-05 1.4499e-07 -1.23319e-06 -1.00029e-06" />
+            <joint name="joint_ra2" type="hinge" axis="1 0 0" range="-1.57 0" damping="0.0" armature="0.05" frictionloss="0.6877" actuatorfrcrange="-31.0 31.0" />
+            <geom name="link_ra2_col" type="capsule" fromto="0 0 0 0 0 -0.13647" size="0.04" />
+            <body name="link_ra3" pos="0 0 -0.13647" quat="1 0 0 0">
+              <inertial pos="0.0012464 -0.01242 -0.082454" mass="1.20406" fullinertia="0.00334582 0.00355365 0.00209589 -6.17437e-05 4.48852e-05 -0.000412505" />
+              <joint name="joint_ra3" type="hinge" axis="0 0 1" range="-2.79 2.79" damping="0.2461" armature="0.05" frictionloss="0.3126" actuatorfrcrange="-31.0 31.0" />
+              <geom name="link_ra3_col" type="capsule" fromto="0 0 0 0 0 -0.13753" size="0.04" />
+              <body name="link_ra4" pos="0 0 -0.13753" quat="1 0 0 0">
+                <inertial pos="-0.00169875 0.0102901 -0.053882" mass="0.712298" fullinertia="0.00192418 0.00194169 0.000863684 -4.28004e-05 1.90166e-05 -0.000318505" />
+                <joint name="joint_ra4" type="hinge" axis="0 1 0" range="-2.23 0" damping="0.0993" armature="0.05" frictionloss="0.3358" actuatorfrcrange="-31.0 31.0" />
+                <geom name="link_ra4_col" type="capsule" fromto="0 0 0 0 0 -0.14125" size="0.035" />
+                <body name="link_ra5" pos="0 0 -0.14125" quat="1 0 0 0">
+                  <inertial pos="0.00746143 1.98799e-06 -0.059898" mass="0.0189907" fullinertia="3.14963e-05 3.19082e-05 2.06247e-05 8.67562e-10 3.7906e-06 -8.16032e-09" />
+                  <joint name="joint_ra5" type="hinge" axis="0 0 1" range="-2.79 2.79" damping="0.0138" armature="0.01" frictionloss="0.0569" actuatorfrcrange="-11.0 11.0" />
+                  <geom name="link_ra5_col" type="capsule" fromto="0 0 0 -0.004 0 -0.13475" size="0.035" />
+                  <body name="link_ra6" pos="-0.004 0 -0.13475" quat="1 0 0 0">
+                    <inertial pos="0.00108489 -0.00393043 -0.000519558" mass="0.743999" fullinertia="0.000458191 0.00053415 0.000485394 -4.64725e-06 -4.16753e-07 2.31843e-06" />
+                    <joint name="joint_ra6" type="hinge" axis="1 0 0" range="-0.87 0.87" damping="0.0138" armature="0.01" frictionloss="0.0569" actuatorfrcrange="-11.0 11.0" />
+                    <body name="link_ra7" pos="0 0 0" quat="1 0 0 0">
+                      <inertial pos="1.88705e-06 -0.0233772 -0.028539" mass="0.0171924" fullinertia="1.45403e-05 1.27624e-05 1.08854e-05 8.19361e-11 -2.10747e-10 3.98618e-06" />
+                      <joint name="joint_ra7" type="hinge" axis="0 1 0" range="-1.57 1.57" damping="0.0508" armature="0.01" frictionloss="0.0143" actuatorfrcrange="-11.0 11.0" />
+                      <body name="gripper" pos="0 0 0">
+                        <inertial pos="0.0054508 -0.00294359 -0.133582" mass="0.104786" fullinertia="0.000338281 0.00015154 0.000198115 -1.19993e-09 1.54256e-07 -2.64712e-08" />
+                        <geom name="gripper_mount" type="cylinder" fromto="0 0 0 0 0 -0.05" size="0.03" rgba="0.3 0.3 0.32 1" />
+                        <geom name="gripper_palm" type="box" size="0.03 0.07 0.04" pos="0.0054849 -0.0029567 -0.123332" rgba="0.3 0.3 0.32 1" />
+                        <body name="finger_l" pos="0.0054849 0.0560433 -0.168332">
+                          <inertial pos="0 0 -0.02" mass="0.05" diaginertia="1e-5 1e-5 1e-5" />
+                          <joint name="finger_l_joint" type="slide" axis="0 -1 0" range="0 0.03" damping="1" />
+                          <geom name="finger_l_geom" type="box" size="0.012 0.006 0.035" pos="0 0 -0.02" rgba="0.2 0.2 0.22 1" />
+                        </body>
+                        <body name="finger_r" pos="0.0054849 -0.0619567 -0.168332">
+                          <inertial pos="0 0 -0.02" mass="0.05" diaginertia="1e-5 1e-5 1e-5" />
+                          <joint name="finger_r_joint" type="slide" axis="0 1 0" range="0 0.03" damping="1" />
+                          <geom name="finger_r_geom" type="box" size="0.012 0.006 0.035" pos="0 0 -0.02" rgba="0.2 0.2 0.22 1" />
+                        </body>
+                        <site name="grip_site" pos="0.0054849 -0.0029567 -0.198332" size="0.01" rgba="1 0.5 0 1" />
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <equality>
+    <joint name="finger_mimic" joint1="finger_r_joint" joint2="finger_l_joint" polycoef="0 1 0 0 0" />
+  </equality>
+  <contact>
+    <exclude body1="torso" body2="link_ra0" />
+    <exclude body1="torso" body2="link_ra1" />
+    <exclude body1="link_ra7" body2="gripper" />
+    <exclude body1="link_ra5" body2="gripper" />
+    <exclude body1="link_ra6" body2="gripper" />
+    <exclude body1="link_ra5" body2="link_ra7" />
+    <exclude body1="link_ra4" body2="link_ra6" />
+    <exclude body1="link_ra5" body2="finger_l" />
+    <exclude body1="link_ra5" body2="finger_r" />
+    <exclude body1="gripper" body2="finger_l" />
+    <exclude body1="gripper" body2="finger_r" />
+    <exclude body1="finger_l" body2="finger_r" />
+  </contact>
+</mujoco>

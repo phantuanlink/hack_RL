@@ -1,0 +1,37 @@
+{
+ "mount": "z-z_r0",
+ "base_pos": [
+  0.0,
+  -0.1815,
+  1.6962
+ ],
+ "base_quat": [
+  0.0,
+  1.0,
+  0.0,
+  0.0
+ ],
+ "shoulder_world": [
+  0.0,
+  -0.1815,
+  1.3632
+ ],
+ "references": {
+  "joints_trajectory_shoulder_rel_2": {
+   "disc_err_cm_mean": 4.948321169516969,
+   "disc_err_cm_max": 36.02197322583373,
+   "normal_err_deg_mean": 4.807803816023014,
+   "normal_err_deg_at_release": 1.1731854135338633,
+   "disc_err_cm_at_release": 1.4433550347983513,
+   "peak_speed_over_limit": 2.0000000000000044
+  },
+  "joints_trajectory_shoulder_rel_3": {
+   "disc_err_cm_mean": 3.5167900210097596,
+   "disc_err_cm_max": 6.830265225023606,
+   "normal_err_deg_mean": 2.6105004761836827,
+   "normal_err_deg_at_release": 0.8283365501615665,
+   "disc_err_cm_at_release": 1.4071201527838813,
+   "peak_speed_over_limit": 2.0000000000000044
+  }
+ }
+}

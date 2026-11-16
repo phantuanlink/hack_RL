@@ -1,0 +1,227 @@
+source: 'System ID 2026-11-15 (hack/sysid/identify.py, bags in hack/results/sysid/bags):
+  link masses/inertias = CAD x per-link scale from identify.py (anchored to the ra1
+  weight test), joint friction identified, effort limit = rated torque (32 N m ra0-ra4,
+  11 N m wrist), gains stiff to match 0.002 rad tracking, gripper 0.18 s. Grip friction
+  (''grip'') still estimated. CAD values: scratch/sysid_params_cad_backup.yaml'
+links:
+  body_link:
+    mass: 1.14697247203123
+    com:
+    - -0.0101255320753146
+    - 7.38411936534455e-05
+    - -0.00580944951864942
+    inertia:
+    - 0.0156626230346363
+    - 0.0115731031448511
+    - 0.00763938356082877
+    - -1.89948139620987e-06
+    - 0.00025265755737671
+    - -3.86151392602082e-06
+  link_ra0:
+    mass: 0.027218931901313095
+    com:
+    - 4.39082600889318e-06
+    - -0.0351511040601273
+    - 0.00290057160749013
+    inertia:
+    - 6.922930261107053e-05
+    - 4.0843587226914754e-05
+    - 6.848325561722991e-05
+    - 8.740574385700708e-09
+    - 1.8816787614797746e-10
+    - -2.7543152067996655e-06
+  link_ra1:
+    mass: 1.2737161887452508
+    com:
+    - 0.013036755293977
+    - -0.0585029037551869
+    - 0.000536491760941615
+    inertia:
+    - 0.0021815636432167902
+    - 0.001555601094562209
+    - 0.0020598426070392263
+    - 0.0004173418904936253
+    - 3.204406268819018e-05
+    - -4.689141287254084e-06
+  link_ra2:
+    mass: 0.015844887553568252
+    com:
+    - -0.021285122827746
+    - 0.00339128841639386
+    - -0.0908433171127738
+    inertia:
+    - 3.264152679725217e-05
+    - 1.965709361984881e-05
+    - 2.0625059578430314e-05
+    - 1.4499014246497444e-07
+    - -1.2331929005741403e-06
+    - -1.0002948232780165e-06
+  link_ra3:
+    mass: 1.2040641998870434
+    com:
+    - 0.0012464
+    - -0.01242
+    - -0.082454
+    inertia:
+    - 0.0033458160629702247
+    - 0.0035536531426553623
+    - 0.002095888619323776
+    - -6.174372202081971e-05
+    - 4.488523869574531e-05
+    - -0.00041250510605868437
+  link_ra4:
+    mass: 0.7122984892574437
+    com:
+    - -0.00169875365366506
+    - 0.0102900881795698
+    - -0.0538819602737075
+    inertia:
+    - 0.0019241844205307949
+    - 0.001941689447303093
+    - 0.000863683641205228
+    - -4.280038229926396e-05
+    - 1.901657102842664e-05
+    - -0.00031850493974541663
+  link_ra5:
+    mass: 0.018990713529168052
+    com:
+    - 0.00746142723654677
+    - 1.98798606887429e-06
+    - -0.0598979665709705
+    inertia:
+    - 3.1496342521759766e-05
+    - 3.190818033017971e-05
+    - 2.062467201135227e-05
+    - 8.675624134009269e-10
+    - 3.79060367700625e-06
+    - -8.16032155866932e-09
+  link_ra6:
+    mass: 0.7439987192800078
+    com:
+    - 0.00108489437099928
+    - -0.00393043101727358
+    - -0.00051955823403671
+    inertia:
+    - 0.0004581906000470038
+    - 0.0005341504128076018
+    - 0.0004853938535645248
+    - -4.647245941011388e-06
+    - -4.167529834282109e-07
+    - 2.318430289380887e-06
+  link_ra7:
+    mass: 0.01719237346480916
+    com:
+    - 1.88704721502952e-06
+    - -0.0233772284650786
+    - -0.0285390038214921
+    inertia:
+    - 1.4540286723115394e-05
+    - 1.2762401153667734e-05
+    - 1.0885421898154657e-05
+    - 8.193606654101347e-11
+    - -2.1074691790501062e-10
+    - 3.9861845630064705e-06
+  gripper:
+    mass: 0.1047858949793663
+    com:
+    - 0.005450801084973939
+    - -0.0029435871028766253
+    - -0.13358205597766346
+    inertia:
+    - 0.0003382814451127511
+    - 0.00015153973741798633
+    - 0.0001981146578066442
+    - -1.1999324255063027e-09
+    - 1.5425571654478137e-07
+    - -2.647115143155018e-08
+joints:
+  joint_ra0:
+    damping: 0.374
+    armature: 0.499
+    frictionloss: 0.3558
+    kp: 1000.0
+    kd: 30.0
+    effort_limit: 31.0
+    velocity_limit: 10.0
+    accel_limit: 100.0
+  joint_ra1:
+    damping: 0.3655
+    armature: 0.05
+    frictionloss: 0.4914
+    kp: 1000.0
+    kd: 30.0
+    effort_limit: 31.0
+    velocity_limit: 10.0
+    accel_limit: 100.0
+  joint_ra2:
+    damping: 0.0
+    armature: 0.05
+    frictionloss: 0.6877
+    kp: 1000.0
+    kd: 30.0
+    effort_limit: 31.0
+    velocity_limit: 10.0
+    accel_limit: 100.0
+  joint_ra3:
+    damping: 0.2461
+    armature: 0.05
+    frictionloss: 0.3126
+    kp: 1000.0
+    kd: 30.0
+    effort_limit: 31.0
+    velocity_limit: 10.0
+    accel_limit: 100.0
+  joint_ra4:
+    damping: 0.0993
+    armature: 0.05
+    frictionloss: 0.3358
+    kp: 1000.0
+    kd: 30.0
+    effort_limit: 31.0
+    velocity_limit: 10.0
+    accel_limit: 100.0
+  joint_ra5:
+    damping: 0.0138
+    armature: 0.01
+    frictionloss: 0.0569
+    kp: 150.0
+    kd: 4.0
+    effort_limit: 11.0
+    velocity_limit: 15.0
+    accel_limit: 200.0
+  joint_ra6:
+    damping: 0.0138
+    armature: 0.01
+    frictionloss: 0.0569
+    kp: 150.0
+    kd: 4.0
+    effort_limit: 11.0
+    velocity_limit: 15.0
+    accel_limit: 200.0
+  joint_ra7:
+    damping: 0.0508
+    armature: 0.01
+    frictionloss: 0.0143
+    kp: 150.0
+    kd: 4.0
+    effort_limit: 11.0
+    velocity_limit: 15.0
+    accel_limit: 200.0
+gripper:
+  stroke_m: 0.03
+  kp: 200.0
+  kd: 5.0
+  force_limit: 40.0
+  open_time_s: 0.18
+  note: 'measured 2026-11-15 at command velocity 1.0 (max): moves after ~0.11 s, 30
+    % open 0.18 s, 95 % 0.3-0.5 s'
+grip:
+  mu: 0.6
+  squeeze_force_n: 40.0
+  pad_half_tangential_m: 0.02763
+  pad_half_radial_m: 0.01375
+  measured: '2026-11-15 hand-push tests through the joint torques (hack/sysid/grip_test.py):
+    pull held >= 30.7 N in plane, twist creeps at ~0.7 N m (peak 1.0), bend ~1.1 N
+    m. mu and F are not separable: pad sizes are effective values that reproduce twist
+    0.8 / bend 1.1 N m.'
+lift_m: 0.589

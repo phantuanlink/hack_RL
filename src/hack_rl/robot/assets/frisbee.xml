@@ -1,0 +1,15 @@
+<mujoco model="frisbee">
+  <!-- 175 g ultimate disc, 27.5 cm diameter. Inertia from Hummel (2003): Ixx=Iyy=1.219e-3, Izz=2.352e-3.
+       Its own z axis is the disc normal (the spin axis). No collisions: while held it moves with the gripper,
+       and the episode ends shortly after release (only the release state is scored). -->
+  <worldbody>
+    <body name="frisbee">
+      <freejoint name="frisbee_free"/>
+      <inertial pos="0 0 0" mass="0.175" diaginertia="0.001219 0.001219 0.002352"/>
+      <geom name="disc" type="cylinder" size="0.1375 0.008" rgba="0.95 0.55 0.1 1" contype="0" conaffinity="0"/>
+      <geom name="rim" type="cylinder" size="0.1375 0.016" pos="0 0 -0.008" rgba="0.95 0.55 0.1 0.35"
+            contype="0" conaffinity="0"/>
+      <site name="frisbee_center" pos="0 0 0" size="0.01"/>
+    </body>
+  </worldbody>
+</mujoco>

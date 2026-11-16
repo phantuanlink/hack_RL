@@ -1,0 +1,33 @@
+[project]
+name = "hack-rl"
+version = "0.1.0"
+description = "RL fine-tuning of a frisbee throw for the UniX AI Panther right arm (mjlab / MuJoCo Warp)"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "mjlab==1.6.0",
+    "mjviser==0.0.16",  # 0.0.17 pulls mujoco-core 4.x, which overwrites the mujoco 3.11 that mjlab 1.6.0 needs
+    "torch>=2.14.0",
+    "numpy",
+    "pyyaml",
+    "matplotlib",
+    "wandb>=0.21,<0.30",
+]
+
+[project.scripts]
+hack-rl = "hack_rl:main"
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[dependency-groups]
+dev = ["pytest"]
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"

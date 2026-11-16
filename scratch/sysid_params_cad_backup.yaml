@@ -1,0 +1,219 @@
+source: CAD inertials from panther_full.urdf (placeholder until real system ID)
+links:
+  body_link:
+    mass: 1.14697247203123
+    com:
+    - -0.0101255320753146
+    - 7.38411936534455e-05
+    - -0.00580944951864942
+    inertia:
+    - 0.0156626230346363
+    - 0.0115731031448511
+    - 0.00763938356082877
+    - -1.89948139620987e-06
+    - 0.00025265755737671
+    - -3.86151392602082e-06
+  link_ra0:
+    mass: 0.136094659505576
+    com:
+    - 4.39082600889318e-06
+    - -0.0351511040601273
+    - 0.00290057160749013
+    inertia:
+    - 0.000346146513052836
+    - 0.000204217936133089
+    - 0.00034241627808366
+    - 4.37028719281858e-08
+    - 9.40839380733047e-10
+    - -1.37715760338982e-05
+  link_ra1:
+    mass: 0.0889255858183926
+    com:
+    - 0.013036755293977
+    - -0.0585029037551869
+    - 0.000536491760941615
+    inertia:
+    - 0.000152307732827254
+    - 0.00010860562176724
+    - 0.000143809674512415
+    - 2.91370812639673e-05
+    - 2.23718366126422e-06
+    - -3.27376412138607e-07
+  link_ra2:
+    mass: 0.0792244377670603
+    com:
+    - -0.021285122827746
+    - 0.00339128841639386
+    - -0.0908433171127738
+    inertia:
+    - 0.000163207633984652
+    - 9.82854680982752e-05
+    - 0.000103125297891135
+    - 7.24950712317726e-07
+    - -6.16596450280992e-06
+    - -5.00147411634078e-06
+  link_ra3:
+    mass: 0.13678
+    com:
+    - 0.0012464
+    - -0.01242
+    - -0.082454
+    inertia:
+    - 0.00038008
+    - 0.00040369
+    - 0.00023809
+    - -7.014e-06
+    - 5.0989e-06
+    - -4.686e-05
+  link_ra4:
+    mass: 0.122252670721065
+    com:
+    - -0.00169875365366506
+    - 0.0102900881795698
+    - -0.0538819602737075
+    inertia:
+    - 0.000330250152032449
+    - 0.000333254561428555
+    - 0.000148235091591316
+    - -7.34588255188123e-06
+    - 3.26383760634614e-06
+    - -5.46653967528714e-05
+  link_ra5:
+    mass: 0.0949534442060658
+    com:
+    - 0.00746142723654677
+    - 1.98798606887429e-06
+    - -0.0598979665709705
+    inertia:
+    - 0.000157481507882346
+    - 0.000159540694247497
+    - 0.000103123225996245
+    - 4.33780642784271e-09
+    - 1.89529937460801e-05
+    - -4.08015547511978e-08
+  link_ra6:
+    mass: 0.0247999573093336
+    com:
+    - 0.00108489437099928
+    - -0.00393043101727358
+    - -0.00051955823403671
+    inertia:
+    - 1.52730200015668e-05
+    - 1.78050137602534e-05
+    - 1.61797951188175e-05
+    - -1.54908198033713e-07
+    - -1.38917661142737e-08
+    - 7.72810096460296e-08
+  link_ra7:
+    mass: 0.0325008367429399
+    com:
+    - 1.88704721502952e-06
+    - -0.0233772284650786
+    - -0.0285390038214921
+    inertia:
+    - 2.74872742818675e-05
+    - 2.4126320731241e-05
+    - 2.05780383211257e-05
+    - 1.54893722350726e-10
+    - -3.98400557487223e-10
+    - 7.53556999995862e-06
+  gripper:
+    mass: 0.19808953502889914
+    com:
+    - 0.005450801084973939
+    - -0.0029435871028766253
+    - -0.13358205597766346
+    inertia:
+    - 0.0006394946016778696
+    - 0.00028647401570069524
+    - 0.0003745202582375744
+    - -2.268378356471047e-09
+    - 2.916083617162631e-07
+    - -5.004164043059323e-08
+joints:
+  joint_ra0:
+    damping: 0.1
+    armature: 0.005
+    frictionloss: 0.02
+    kp: 30.0
+    kd: 1.5
+    effort_limit: 10.0
+    velocity_limit: 3.0
+    accel_limit: 25.0
+  joint_ra1:
+    damping: 0.1
+    armature: 0.005
+    frictionloss: 0.02
+    kp: 30.0
+    kd: 1.5
+    effort_limit: 10.0
+    velocity_limit: 3.0
+    accel_limit: 25.0
+  joint_ra2:
+    damping: 0.1
+    armature: 0.005
+    frictionloss: 0.02
+    kp: 30.0
+    kd: 1.5
+    effort_limit: 10.0
+    velocity_limit: 3.0
+    accel_limit: 25.0
+  joint_ra3:
+    damping: 0.1
+    armature: 0.005
+    frictionloss: 0.02
+    kp: 30.0
+    kd: 1.5
+    effort_limit: 10.0
+    velocity_limit: 3.0
+    accel_limit: 25.0
+  joint_ra4:
+    damping: 0.1
+    armature: 0.005
+    frictionloss: 0.02
+    kp: 30.0
+    kd: 1.5
+    effort_limit: 10.0
+    velocity_limit: 3.0
+    accel_limit: 25.0
+  joint_ra5:
+    damping: 0.1
+    armature: 0.005
+    frictionloss: 0.02
+    kp: 30.0
+    kd: 1.5
+    effort_limit: 10.0
+    velocity_limit: 3.0
+    accel_limit: 25.0
+  joint_ra6:
+    damping: 0.1
+    armature: 0.005
+    frictionloss: 0.02
+    kp: 30.0
+    kd: 1.5
+    effort_limit: 10.0
+    velocity_limit: 3.0
+    accel_limit: 25.0
+  joint_ra7:
+    damping: 0.1
+    armature: 0.005
+    frictionloss: 0.02
+    kp: 30.0
+    kd: 1.5
+    effort_limit: 10.0
+    velocity_limit: 3.0
+    accel_limit: 25.0
+gripper:
+  stroke_m: 0.03
+  kp: 200.0
+  kd: 5.0
+  force_limit: 40.0
+  open_time_s: 0.08
+  note: real opening speed unmeasured
+# Friction grip on the frisbee (MEASURE): the disc is pinched by its rim between the two finger pads.
+# Pull/twist tests with a spring scale give mu and the squeeze force; the pad patch is what touches the disc.
+grip:
+  mu: 0.6                       # pad <-> frisbee plastic (rubber pads ~0.8-1.0, bare plastic/metal ~0.3)
+  squeeze_force_n: 40.0         # per finger, closed on the disc (= gripper force limit assumed)
+  pad_half_tangential_m: 0.012  # half width of the contact patch along the rim
+  pad_half_radial_m: 0.010      # half depth: how far the rim sits between the pads
